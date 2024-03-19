@@ -3,37 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AREA OF CIRCLE</title>
+  <title>Check Money</title>
 </head>
-<script lang="javaScript">
-  function findArea(){
-    var radius,pi,area;
-     radius = parseFloat(document.getElementById('num1').value);
-       pi = parseFloat(document.getElementById('num2').value);
-       area = pi * radius * radius;
-      document.getElementById('area').value = area.toFixed(2);
-  }
-
-</script>
 <body>
-  <p>AREA OF CIRCLE</p>
-  <table >
+  <script language="javaScript">
+    function findAmount(){
+      var amount,twoTho,FiveT,TwoHT;
+      amount=document.getElementById('amount').value;
+      document.getElementById('2000rs').value=parseInt(amount/2000);
+
+    }
+
+  </script>
+  <table>
     <tr>
-      <td>Enter Circle Radius</td>
-      <td><input type="text" id="num1"></td>
+      <td>
+        Enter your Amount
+      </td>
+      <td>
+        <input type="number" id="amount">
+      </td>
     </tr>
     <tr>
-      <td>Enter Pi Value</td>
-      <td><input type="text" id="num2"></td>
+      <td>
+        2000 rs
+      </td>
+      <td>
+        <input type="number" id="2000rs">
+      </td>
     </tr>
     <tr>
-      <td>Radius is</td>
-      <td><input type="text" id="radius"></td>
+      <td>
+        500 rs
+      </td>
+      <td>
+        <input type="number" id="500rs">
+      </td>
     </tr>
-   
+    <tr>
+      <td>
+       200 rs
+      </td>
+      <td>
+        <input type="number" id="200rs">
+      </td>
+    </tr>
+    <tr>
+      <td>
+       100 rs
+      </td>
+      <td>
+        <input type="number" id="100rs">
+      </td>
+    </tr>
+    <tr>
+      <td>
+       50 rs
+      </td>
+      <td>
+        <input type="number" id="50rs">
+      </td>
+    </tr>
   </table>
-  <button>
-    <input type="button"value="OK" onclick="findArea"> 
-  </button>
+  <td colspan="2"><button onclick="findAmount()">Calculate</button></td>
 </body>
 </html>
