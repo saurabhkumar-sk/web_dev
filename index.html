@@ -3,56 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>AREA OF CIRCLE</title>
 </head>
-<script language="javascript">
-  function myFun(){
-    var a,b,c;                                                                  
-    // let a,b,c;
-    // const a,b,c;
-    a=parseInt(document.getElementById('num1').value);
-    b= parseInt(document.getElementById('num2').value);
-    document.getElementById('Sum').value=a+b;
-    document.getElementById('Sub').value=a-b;
-    document.getElementById('Mul').value=a*b;
-    document.getElementById('Div').value=a/b;
-    
+<script lang="javaScript">
+  function findArea(){
+    var radius,pi,area;
+     radius = parseFloat(document.getElementById('num1').value);
+       pi = parseFloat(document.getElementById('num2').value);
+       area = pi * radius * radius;
+      document.getElementById('area').value = area.toFixed(2);
   }
 
 </script>
 <body>
-  <h1>Calculator</h1>
-  <table border="2" HEIGHT=200>
+  <p>AREA OF CIRCLE</p>
+  <table >
     <tr>
-      <td>Enter First name  </td>
-      <td ><input type="text" id="num1"> </td>
-      
+      <td>Enter Circle Radius</td>
+      <td><input type="text" id="num1"></td>
     </tr>
     <tr>
-      <td >Enter Second name </td>
-      <td ><input type="text" id="num2"> </td>
-    </tr>
-    
-    <tr>
-      <td>Sum is</td>
-      <td><input type="text"  id="Sum"> </td>
-    </tr>
-
-    <tr>
-      <td>Sub is </td>
-      <td><input type="text"  id="Sub"> </td>
-    </tr>
-
-    <tr>
-      <td>Mul is </td>
-      <td><input type="text"  id="Mul"> </td>
+      <td>Enter Pi Value</td>
+      <td><input type="text" id="num2"></td>
     </tr>
     <tr>
-
-      <td>Div is </td>
-      <td><input type="text"  id="Div"> </td>
+      <td>Radius is</td>
+      <td><input type="text" id="radius"></td>
     </tr>
-  </table >
-  <input type="button"  value="OK" onclick="myFun()">
+   
+  </table>
+  <button>
+    <input type="button"value="OK" onclick="findArea"> 
+  </button>
 </body>
 </html>
