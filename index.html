@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script language="javascript">
+  function myFun(){
+    var a,b,c;                                                                  
+    // let a,b,c;
+    // const a,b,c;
+    a=parseInt(document.getElementById('num1').value);
+    b= parseInt(document.getElementById('num2').value);
+    document.getElementById('Sum').value=a+b;
+    document.getElementById('Sub').value=a-b;
+    document.getElementById('Mul').value=a*b;
+    document.getElementById('Div').value=a/b;
+    
+  }
+
+</script>
+<body>
+  <h1>Calculator</h1>
+  <table border="2" HEIGHT=200>
+    <tr>
+      <td>Enter First name  </td>
+      <td ><input type="text" id="num1"> </td>
+      
+    </tr>
+    <tr>
+      <td >Enter Second name </td>
+      <td ><input type="text" id="num2"> </td>
+    </tr>
+    
+    <tr>
+      <td>Sum is</td>
+      <td><input type="text"  id="Sum"> </td>
+    </tr>
+
+    <tr>
+      <td>Sub is </td>
+      <td><input type="text"  id="Sub"> </td>
+    </tr>
+
+    <tr>
+      <td>Mul is </td>
+      <td><input type="text"  id="Mul"> </td>
+    </tr>
+    <tr>
+
+      <td>Div is </td>
+      <td><input type="text"  id="Div"> </td>
+    </tr>
+  </table >
+  <input type="button"  value="OK" onclick="myFun()">
+</body>
+</html>
