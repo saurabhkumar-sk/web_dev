@@ -3,68 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Check Money</title>
+  <title>Word To String</title>
 </head>
 <body>
-  <script language="javaScript">
-    function findAmount(){
-      var amount,twoTho,FiveT,TwoHT;
-      amount=document.getElementById('amount').value;
-      document.getElementById('2000rs').value=parseInt(amount/2000);
-
+  <table align="center"  border="2">
+    <tr>
+      <td>Enter Number</td>
+      <td><input type="number" id="num"></td>
+    </tr>
+    <tr>
+      <td>Result</td>
+      <td><input type="text" id="result"></td>
+    </tr >
+    <tr></tr>    
+        <tr align="center">
+          <td colspan="2"><input type="button" value="Convert" onclick="myFun()"></td>
+        </tr>
+  
+  <script lang="javascript">
+    function myFun(){
+      let p=document.getElementById("num").value;
+      let s='';
+      switch(parseInt(n/100)){    
+          case 1: s='One hundred'; break;
+          case 2: s='Two hundred'; break;
+          case 3: s='Three hundred'; break;
+          case 4: s='Four hundred'; break;
+          case 5: s='Five hundred'; break;
+          case 6: s='Six hundred'; break;
+          case 7: s='Seven hundred'; break;
+          case 8: s='Eight hundred'; break;
+          case 9: s='Nine hundred'; break;
+      }
+      document.getElementById("result").value=s;
     }
-
   </script>
-  <table>
-    <tr>
-      <td>
-        Enter your Amount
-      </td>
-      <td>
-        <input type="number" id="amount">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        2000 rs
-      </td>
-      <td>
-        <input type="number" id="2000rs">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        500 rs
-      </td>
-      <td>
-        <input type="number" id="500rs">
-      </td>
-    </tr>
-    <tr>
-      <td>
-       200 rs
-      </td>
-      <td>
-        <input type="number" id="200rs">
-      </td>
-    </tr>
-    <tr>
-      <td>
-       100 rs
-      </td>
-      <td>
-        <input type="number" id="100rs">
-      </td>
-    </tr>
-    <tr>
-      <td>
-       50 rs
-      </td>
-      <td>
-        <input type="number" id="50rs">
-      </td>
-    </tr>
-  </table>
-  <td colspan="2"><button onclick="findAmount()">Calculate</button></td>
 </body>
 </html>
