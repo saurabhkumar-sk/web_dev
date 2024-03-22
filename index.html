@@ -22,20 +22,16 @@
   
   <script lang="javascript">
     function myFun(){
-      let p=document.getElementById("num").value;
+      let n=document.getElementById("num").value;
       let s='';
-      switch(parseInt(n/100)){    
-          case 1: s='One hundred'; break;
-          case 2: s='Two hundred'; break;
-          case 3: s='Three hundred'; break;
-          case 4: s='Four hundred'; break;
-          case 5: s='Five hundred'; break;
-          case 6: s='Six hundred'; break;
-          case 7: s='Seven hundred'; break;
-          case 8: s='Eight hundred'; break;
-          case 9: s='Nine hundred'; break;
+      if (n%2==0) {
+      s=  document.getElementById('result').value="Even";
+      } else {
+       s= document.getElementById('result').value="Odd";
+
       }
-      document.getElementById("result").value=s;
+      document.getElementById('result').value=s;
+      document.getElementById('result').value=s;
     }
   </script>
 </body>
